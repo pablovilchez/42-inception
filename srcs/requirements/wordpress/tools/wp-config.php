@@ -3,16 +3,16 @@
 // ** Database settings ** //
 
 /** The name of the database for WordPress */
-define( 'DB_NAME', $_ENV['WORDPRESS_DB_NAME'] );
+define( 'DB_NAME', 'MDB_DB_NAME' );
 
 /** Database username */
-define( 'DB_USER', $_ENV['WORDPRESS_DB_USER'] );
+define( 'DB_USER', 'MDB_USER_NAME' );
 
 /** Database password */
-define( 'DB_PASSWORD', $_ENV['WORDPRESS_DB_PASSWORD'] );
+define( 'DB_PASSWORD', 'MDB_USER_PASS' );
 
 /** Database hostname */
-define( 'DB_HOST', $_ENV['WORDPRESS_DB_HOST'] );
+define( 'DB_HOST', 'MDB_HOST' );
 
 /** Database charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8' );
@@ -31,14 +31,14 @@ define( 'DB_COLLATE', '' );
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'q,VrMu@W3N$8lsY~K;,&~}+mj|}PjcUdh)H0Lyk+jII0/ Plr^HP*(~IA#p#G%~p');
-define('SECURE_AUTH_KEY',  'KoGFkg1,vS+gINeNrx*BjS-pl#j[/Pi24PqPshVD?rm.`F*+}mU9*b d[F# l.qR');
-define('LOGGED_IN_KEY',    'E`{ub-R1I+7_0~$-wt6/7!},}uUc>Qwt#^?R[DUM~hfRDSnOz-LLc>z7s&!U?PMV');
-define('NONCE_KEY',        'h<F3U;b@z H>[+=/+Qz[e-eB5vw>>1-:{9-D^<p3rg futlYzO:a;R!COqggpM+Y');
-define('AUTH_SALT',        '>eX1*hly+,!f<<n1icTyla|MQi*|#_n{auFx+;mfyAwM[dvD{w1O`*]BobEE<PfT');
-define('SECURE_AUTH_SALT', '%uHMhw~C/!0L3h9emJ9YkMER{Ua?k%8/|ZNce!5<XM6?Q+)^v6ex):t&WxIq+@Pi');
-define('LOGGED_IN_SALT',   'nD*TTw#tk+uO{@iZ+YOHN`&*kuU@NMVSk/419Jr,,%Dfl-g?YdAi;` vW3N1FPs/');
-define('NONCE_SALT',       '+f=j&zTc0Pv8#JZKbQ96S1U!& <_tuapL!C9n_^Yy&$2Q*,,`{x2~l.?q#ZScOF+');
+define('AUTH_KEY',         'WP_AUTH_KEY');
+define('SECURE_AUTH_KEY',  'WP_SECURE_A_KEY');
+define('LOGGED_IN_KEY',    'WP_LOGGED_IN_KEY');
+define('NONCE_KEY',        'WP_NONCE_KEY');
+define('AUTH_SALT',        'WP_AUTH_SALT');
+define('SECURE_AUTH_SALT', 'WP_SECURE_A_SALT');
+define('LOGGED_IN_SALT',   'WP_LOGGED_IN_SALT');
+define('NONCE_SALT',       'WP_NONCE_SALT');
 
 /**
  * WordPress database table prefix.
